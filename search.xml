@@ -43,20 +43,20 @@
       <title>about</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="这就是我"><a href="#这就是我" class="headerlink" title="这就是我"></a>这就是我</h1><h2 id="平凡的人"><a href="#平凡的人" class="headerlink" title="平凡的人"></a>平凡的人</h2>]]></content>
-    </entry>
-    
-    <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      <content type="html"><![CDATA[]]></content>
+      <content type="html"><![CDATA[<h1 id="一条悠闲的咸鱼"><a href="#一条悠闲的咸鱼" class="headerlink" title="一条悠闲的咸鱼"></a>一条悠闲的咸鱼</h1><p>有问题可以用QQ联系我</p><p>QQ: 441169995</p>]]></content>
     </entry>
     
     <entry>
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
