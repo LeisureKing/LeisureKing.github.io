@@ -65,10 +65,10 @@
   
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      <content type="html"><![CDATA[]]></content>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="一条悠闲的咸鱼"><a href="#一条悠闲的咸鱼" class="headerlink" title="一条悠闲的咸鱼"></a>一条悠闲的咸鱼</h1><p>有问题可以用QQ联系我</p><p>QQ: 441169995</p>]]></content>
     </entry>
     
     <entry>
@@ -79,10 +79,10 @@
     </entry>
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="一条悠闲的咸鱼"><a href="#一条悠闲的咸鱼" class="headerlink" title="一条悠闲的咸鱼"></a>一条悠闲的咸鱼</h1><p>有问题可以用QQ联系我</p><p>QQ: 441169995</p>]]></content>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      <content type="html"><![CDATA[]]></content>
     </entry>
     
   
