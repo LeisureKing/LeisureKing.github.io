@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://blog.dowalker.cn/"/>
   <updated>2018-10-20T03:43:57.527Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://blog.dowalker.cn/</id>
   
   <author>
     <name>Dowalker</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>分享一款自制的小软件</title>
-    <link href="http://yoursite.com/2018/08/29/%E5%88%86%E4%BA%AB%E4%B8%80%E6%AC%BE%E8%87%AA%E5%88%B6%E7%9A%84%E5%B0%8F%E8%BD%AF%E4%BB%B6/"/>
-    <id>http://yoursite.com/2018/08/29/分享一款自制的小软件/</id>
+    <link href="http://blog.dowalker.cn/2018/08/29/%E5%88%86%E4%BA%AB%E4%B8%80%E6%AC%BE%E8%87%AA%E5%88%B6%E7%9A%84%E5%B0%8F%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://blog.dowalker.cn/2018/08/29/分享一款自制的小软件/</id>
     <published>2018-08-29T06:29:00.000Z</published>
     <updated>2018-10-20T03:43:57.527Z</updated>
     
@@ -29,21 +29,21 @@
     
     </summary>
     
-      <category term="资源" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90/"/>
+      <category term="资源" scheme="http://blog.dowalker.cn/categories/%E8%B5%84%E6%BA%90/"/>
     
-      <category term="实用" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90/%E5%AE%9E%E7%94%A8/"/>
+      <category term="实用" scheme="http://blog.dowalker.cn/categories/%E8%B5%84%E6%BA%90/%E5%AE%9E%E7%94%A8/"/>
     
     
-      <category term="分享" scheme="http://yoursite.com/tags/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="http://blog.dowalker.cn/tags/%E5%88%86%E4%BA%AB/"/>
     
-      <category term="时钟" scheme="http://yoursite.com/tags/%E6%97%B6%E9%92%9F/"/>
+      <category term="时钟" scheme="http://blog.dowalker.cn/tags/%E6%97%B6%E9%92%9F/"/>
     
   </entry>
   
   <entry>
     <title>测试</title>
-    <link href="http://yoursite.com/2018/08/28/myblog/"/>
-    <id>http://yoursite.com/2018/08/28/myblog/</id>
+    <link href="http://blog.dowalker.cn/2018/08/28/myblog/"/>
+    <id>http://blog.dowalker.cn/2018/08/28/myblog/</id>
     <published>2018-08-28T06:29:00.000Z</published>
     <updated>2018-10-20T03:44:20.670Z</updated>
     
@@ -53,21 +53,21 @@
     
     </summary>
     
-      <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+      <category term="测试" scheme="http://blog.dowalker.cn/categories/%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="http://blog.dowalker.cn/categories/%E6%B5%8B%E8%AF%95/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="live" scheme="http://yoursite.com/tags/live/"/>
+      <category term="live" scheme="http://blog.dowalker.cn/tags/live/"/>
     
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+      <category term="test" scheme="http://blog.dowalker.cn/tags/test/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/08/25/hello-world/"/>
-    <id>http://yoursite.com/2018/08/25/hello-world/</id>
+    <link href="http://blog.dowalker.cn/2018/08/25/hello-world/"/>
+    <id>http://blog.dowalker.cn/2018/08/25/hello-world/</id>
     <published>2018-08-25T11:37:25.793Z</published>
     <updated>2018-08-29T02:16:09.026Z</updated>
     
