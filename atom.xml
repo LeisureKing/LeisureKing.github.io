@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.dowalker.cn/"/>
-  <updated>2018-10-20T03:43:57.527Z</updated>
+  <updated>2018-12-26T15:54:45.637Z</updated>
   <id>http://blog.dowalker.cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用阿里云服务器挖矿</title>
+    <link href="http://blog.dowalker.cn/2018/12/26/%E5%88%A9%E7%94%A8%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8C%96%E7%9F%BF/"/>
+    <id>http://blog.dowalker.cn/2018/12/26/利用阿里云服务器挖矿/</id>
+    <published>2018-12-26T13:22:58.000Z</published>
+    <updated>2018-12-26T15:54:45.637Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;买了阿里云服务器的学生套餐好久但是一直没啥用，一直都是用来当作web项目存放器，感觉特别浪费。&lt;/p&gt;
+&lt;p&gt;后来突发奇想，想用服务器来挖矿，然后就找了一波相关知识。具体来说用服务器挖矿主要是用cpu，而cpu的话门罗币比较支持。我用的ubantu16.04版本。&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="-技术" scheme="http://blog.dowalker.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="-挖矿 -Linux -门罗币 -服务器" scheme="http://blog.dowalker.cn/tags/%E6%8C%96%E7%9F%BF-Linux-%E9%97%A8%E7%BD%97%E5%B8%81-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>分享一款自制的小软件</title>
@@ -69,7 +97,7 @@
     <link href="http://blog.dowalker.cn/2018/08/25/hello-world/"/>
     <id>http://blog.dowalker.cn/2018/08/25/hello-world/</id>
     <published>2018-08-25T11:37:25.793Z</published>
-    <updated>2018-08-29T02:16:09.026Z</updated>
+    <updated>2018-12-26T13:24:17.241Z</updated>
     
     <summary type="html">
     
