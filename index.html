@@ -169,37 +169,6 @@
 <p>一、申请一个钱包</p>
 <p>这里申请一个在线钱包，打开网址（<a href="https://mymonero.com/#/）点击创建账户" target="_blank" rel="noopener">https://mymonero.com/#/）点击创建账户</a></p>
 <p>然后把<code>Private Login Key</code>放入<code>Confirm your Private Login Key</code>中点击验证即可</p>
-<p><img src="http://image.iamber.top//18-12-26/4474354.jpg" alt=""></p>
-<p>需要保存 Private Login Key 和 出来的 address</p>
-<p><img src="http://image.iamber.top//18-12-26/25192495.jpg" alt=""></p>
-<p>二、安装挖矿软件</p>
-<p>具体代码<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ sudo apt-get -y install git<br><br>$ git <span class="hljs-built_in">clone</span> https://github.com/fireice-uk/xmr-stak-cpu.git<br><br>$ sudo apt-get -y install libmicrohttpd-dev libssl-dev cmake build-essential<br><br>$ <span class="hljs-built_in">cd</span> xmr-stak-cpu/<br><br>$ cmake -DHWLOC_ENABLE=OFF <br><br>$ make install<br></code></pre></td></tr></table></figure></p>
-<p><img src="http://image.iamber.top//18-12-26/43913409.jpg" alt=""></p>
-<p>得到上图结果表示基本安装成功</p>
-<p>三、配置相关文件</p>
-<p>进入bin目录</p>
-<figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ <span class="hljs-built_in">cd</span> bin<br><br>$ ./xmr-stak-cpu<br></code></pre></td></tr></table></figure>
-<p><img src="http://image.iamber.top//18-12-26/524436.jpg" alt=""><br>得到结果如上图</p>
-<p>将红色框内容复制到config.txt中去，也就是将下图红色框内的东西替换。</p>
-<p><img src="http://image.iamber.top//18-12-26/64559123.jpg" alt=""></p>
-<p>先别急，还需要用到config.txt。在里面找到</p>
-<p>“pool_address” : “pool.usxmrpool.com:3333”,</p>
-<p>“wallet_address” : “”,</p>
-<p>“pool_password” : “”,</p>
-<p>第一个参数是矿池地址。推荐几个，找到合适的主机地址和端口号填入一个参数里面</p>
-<p><a href="http://minexmr.com/#" target="_blank" rel="noopener">http://minexmr.com/#</a></p>
-<p><a href="https://monerohash.com/" target="_blank" rel="noopener">https://monerohash.com/</a></p>
-<p><a href="http://pool.monero.org/" target="_blank" rel="noopener">http://pool.monero.org/</a></p>
-<p>第二个参数是钱包地址，之前讲过，直接放入其中就可以</p>
-<p>第三个参数是密码，一般填个x就可以。填完保存退出。</p>
-<p>四、 现在开始挖矿</p>
-<p>进入挖矿软件的bin目录，运行代码就可以看到挖矿开始，同时放到了后台，不会随ssh断开停止进程。</p>
-<figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ nohup ./xmr-stak-cpu<br></code></pre></td></tr></table></figure>
-<p><img src="http://image.iamber.top//18-12-26/36962576.jpg" alt=""></p>
-<p>五、 查看收益</p>
-<p>打开下面网址，在搜索框输入钱包地址就可以看到，不过需要等挖矿挖了好长一段时间才能看到。</p>
-<p><a href="https://xmr.nanopool.org/" target="_blank" rel="noopener">https://xmr.nanopool.org/</a></p>
-
       
     </main>
     <footer class="post-footer">
