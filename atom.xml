@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.dowalker.cn/"/>
-  <updated>2018-12-26T16:02:45.234Z</updated>
+  <updated>2019-01-20T02:28:15.678Z</updated>
   <id>http://blog.dowalker.cn/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>windows 超简单安装scrapy</title>
+    <link href="http://blog.dowalker.cn/2019/01/20/windows-%E8%B6%85%E7%AE%80%E5%8D%95%E5%AE%89%E8%A3%85scrapy/"/>
+    <id>http://blog.dowalker.cn/2019/01/20/windows-超简单安装scrapy/</id>
+    <published>2019-01-20T02:00:03.000Z</published>
+    <updated>2019-01-20T02:28:15.678Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;最近在学习爬虫，准备学习一波scrapy框架。打算先在自己电脑用一下爬虫框架，之后试一试服务器跑爬虫。&lt;/p&gt;
+&lt;p&gt;我百度了一下安装教程，挺长的，找了几个安装教程都出错了，而后发现了一个超级简单的方法。&lt;/p&gt;
+&lt;p&gt;先下载一个&lt;code&gt;Miniconda&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="http://blog.dowalker.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="python" scheme="http://blog.dowalker.cn/tags/python/"/>
+    
+      <category term="爬虫" scheme="http://blog.dowalker.cn/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="经验" scheme="http://blog.dowalker.cn/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+      <category term="Windows" scheme="http://blog.dowalker.cn/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>利用阿里云服务器挖矿</title>
