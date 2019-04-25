@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.dowalker.cn/"/>
-  <updated>2019-01-20T02:28:15.678Z</updated>
+  <updated>2019-04-25T06:03:45.579Z</updated>
   <id>http://blog.dowalker.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fanyi</title>
+    <link href="http://blog.dowalker.cn/2019/04/25/fanyi/"/>
+    <id>http://blog.dowalker.cn/2019/04/25/fanyi/</id>
+    <published>2019-04-25T06:02:45.000Z</published>
+    <updated>2019-04-25T06:03:45.579Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;or fuzzy set theory provides a means to compute with words. It concentrates on the use of fuzzy values that capture the meaning of
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>windows 超简单安装scrapy</title>
@@ -47,6 +69,38 @@
       <category term="经验" scheme="http://blog.dowalker.cn/tags/%E7%BB%8F%E9%AA%8C/"/>
     
       <category term="Windows" scheme="http://blog.dowalker.cn/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>翻译</title>
+    <link href="http://blog.dowalker.cn/2018/12/26/%E7%BF%BB%E8%AF%91/"/>
+    <id>http://blog.dowalker.cn/2018/12/26/翻译/</id>
+    <published>2018-12-26T13:22:58.000Z</published>
+    <updated>2019-04-25T04:17:04.728Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;or fuzzy set theory provides a means to compute with words. It concentrates on the use of fuzzy values that capture the meaning of
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="http://blog.dowalker.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="挖矿" scheme="http://blog.dowalker.cn/tags/%E6%8C%96%E7%9F%BF/"/>
+    
+      <category term="Linux" scheme="http://blog.dowalker.cn/tags/Linux/"/>
+    
+      <category term="门罗币" scheme="http://blog.dowalker.cn/tags/%E9%97%A8%E7%BD%97%E5%B8%81/"/>
+    
+      <category term="服务器" scheme="http://blog.dowalker.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
