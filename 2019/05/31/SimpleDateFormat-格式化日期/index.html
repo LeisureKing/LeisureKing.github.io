@@ -146,6 +146,14 @@
         
         
         
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+        </span>
+        
+        
         
         
       </div>
@@ -173,6 +181,12 @@
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs undefined">class MyTime2 implements MyDateTime &#123;<br>    <br>    @Override<br>    public String getDate() &#123;<br>        SimpleDateFormat format = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);<br>        return format.format(new Date());<br>    &#125;<br><br>    @Override<br>    public String getDateTime() &#123;<br>        SimpleDateFormat format = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss.S&quot;);<br>        return format.format(new Date());<br>    &#125;<br>    <br>&#125;<br></code></pre></td></tr></table></figure>
     </main>
     <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/Java/" rel="tag"><i class="fas fa-tags"></i>Java</a>
+        
+      </div>
       
     </footer>
   </article>
@@ -278,7 +292,7 @@
     
     <div class="tags-count">
       <div class="site-count-title">标签</div>
-      <div><a href="/tags/">12</a></div>
+      <div><a href="/tags/">13</a></div>
     </div>
     
   </div>

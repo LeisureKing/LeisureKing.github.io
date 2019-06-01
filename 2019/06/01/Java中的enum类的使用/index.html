@@ -146,6 +146,14 @@
         
         
         
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+        </span>
+        
+        
         
         
       </div>
@@ -156,6 +164,12 @@
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs undefined">public class Task4 &#123;<br>    public static void main(String[] args) &#123;<br>        System.out.println(Season.SPRING.toString());<br>        // valueof()匹配枚举类中相同字符串的成员<br>        System.out.println(Season.valueOf(&quot;SUMMER&quot;));// ordinal 返回序号<br>        System.out.println(Season.AUTUMN.ordinal());<br>    &#125;<br>&#125;<br><br>enum Season &#123;<br>    SPRING(&quot;春天&quot;, &quot;春风又绿江南岸&quot;), SUMMER(&quot;夏天&quot;, &quot;映日荷花别样红&quot;), <br>    AUTUMN(&quot;秋天&quot;, &quot;秋水共长天一色&quot;), WINTER(&quot;冬天&quot;, &quot;窗含西岭千秋雪&quot;);<br><br>    private String seasonName;<br>    private String seasonDesc;<br><br>    private Season(String seasonName, String seasonDesc) &#123;<br>        this.seasonDesc = seasonDesc;<br>        this.seasonName = seasonName;<br>    &#125;<br><br>    public String toString() &#123;<br>        return seasonName + &quot;:&quot; + seasonDesc;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
     </main>
     <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/Java/" rel="tag"><i class="fas fa-tags"></i>Java</a>
+        
+      </div>
       
     </footer>
   </article>
@@ -259,7 +273,7 @@
     
     <div class="tags-count">
       <div class="site-count-title">标签</div>
-      <div><a href="/tags/">12</a></div>
+      <div><a href="/tags/">13</a></div>
     </div>
     
   </div>
