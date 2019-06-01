@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.dowalker.cn/"/>
-  <updated>2019-04-25T06:11:42.547Z</updated>
+  <updated>2019-06-01T02:31:39.491Z</updated>
   <id>http://blog.dowalker.cn/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java中的enum类的使用</title>
+    <link href="http://blog.dowalker.cn/2019/06/01/Java%E4%B8%AD%E7%9A%84enum%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://blog.dowalker.cn/2019/06/01/Java中的enum类的使用/</id>
+    <published>2019-06-01T02:09:14.000Z</published>
+    <updated>2019-06-01T02:31:39.491Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;创建枚举类型要使用 enum 关键字，隐含了所创建的类型都是 java.lang.Enum 类的子类（java.lang.Enum 是一个抽象类）。枚举类型符合通用模式 Class Enum&amp;lt;E extends Enum&lt;e&gt;&amp;gt;，而 E表示枚举类型的名称。枚举类型的每一个值都将映射到 protected Enum(String name, int ordinal) 构造函数中，在这里，每个值的名称都被转换成一个字符串，并且序数设置表示了此设置被创建的顺序。&lt;/e&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SimpleDateFormat 格式化日期</title>
+    <link href="http://blog.dowalker.cn/2019/05/31/SimpleDateFormat-%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%97%A5%E6%9C%9F/"/>
+    <id>http://blog.dowalker.cn/2019/05/31/SimpleDateFormat-格式化日期/</id>
+    <published>2019-05-31T13:11:50.000Z</published>
+    <updated>2019-06-01T02:31:10.290Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;白话文的讲：这些A——Z，a——z这些字母(不被单引号包围的)会被特殊处理替换为对应的日期时间，其他的字符串还是原样输出。&lt;br&gt;日期和时间模式(注意大小写，代表的含义是不同的)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://image.iamber.top/FleVj3Dr6BJNp9RW2wE9ypGfHfwM&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>fanyi</title>

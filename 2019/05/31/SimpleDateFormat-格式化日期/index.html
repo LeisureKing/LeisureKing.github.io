@@ -80,7 +80,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>分类: 测试 | Dowalker's blog</title>
+    <title>SimpleDateFormat 格式化日期 | Dowalker's blog</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -122,22 +122,117 @@
         <div class="main-container">
           <div class="content">
             
-<div id="category" class="category page">
-  <h1 class="page-title">测试</h1>
+<div id="post" class="page">
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <header id="post-header" class="post-header">
-      <h1 class="post-title-simple" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/08/28/myblog/" itemprop="url">测试</a>
-      </h1>
-      
-      <span class="post-date">
-        <time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-28T14:29:00+08:00">08-28</time>
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://blog.dowalker.cn/2019/05/31/SimpleDateFormat-格式化日期/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="Dowalker">
+       <meta itemprop="description" content="I do not know where to go,but I have been on the road.">
+       <meta itemprop="image" content="/images/avatar.png">
       </span>
-      
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="Dowalker's blog">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">SimpleDateFormat 格式化日期</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-05-31T21:11:50+08:00">2019-05-31 21:11:50</time></span>
+        </span>
+        
+        
+        
+        
+        
+      </div>
     </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>白话文的讲：这些A——Z，a——z这些字母(不被单引号包围的)会被特殊处理替换为对应的日期时间，其他的字符串还是原样输出。<br>日期和时间模式(注意大小写，代表的含义是不同的)</p>
+<p><img src="http://image.iamber.top/FleVj3Dr6BJNp9RW2wE9ypGfHfwM" alt=""><br><a id="more"></a></p>
+<p>yyyy：年</p>
+<p>MM：月</p>
+<p>dd：日</p>
+<p>hh：1~12小时制(1-12)</p>
+<p>HH：24小时制(0-23)</p>
+<p>mm：分</p>
+<p>ss：秒</p>
+<p>S：毫秒</p>
+<p>E：星期几</p>
+<p>D：一年中的第几天</p>
+<p>F：一月中的第几个星期(会把这个月总共过的天数除以7)</p>
+<p>w：一年中的第几个星期</p>
+<p>W：一月中的第几星期(会根据实际情况来算)</p>
+<p>a：上下午标识</p>
+<p>k：和HH差不多，表示一天24小时制(1-24)。</p>
+<p>K：和hh差不多，表示一天12小时制(0-11)。</p>
+<p>z：表示时区</p>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs undefined">class MyTime2 implements MyDateTime &#123;<br>    <br>    @Override<br>    public String getDate() &#123;<br>        SimpleDateFormat format = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);<br>        return format.format(new Date());<br>    &#125;<br><br>    @Override<br>    public String getDateTime() &#123;<br>        SimpleDateFormat format = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss.S&quot;);<br>        return format.format(new Date());<br>    &#125;<br>    <br>&#125;<br></code></pre></td></tr></table></figure>
+    </main>
+    <footer class="post-footer">
+      
+    </footer>
   </article>
   
+  
+<div class="reward" id="reward">
+  <p>坚持原创技术分享，您的支持是我前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;" aria-hidden="true">
+    
+    <div id="wechat">
+      <img id="wechat_qr" src="/images/WeChatPay.png" alt="微信支付"/>
+      <span>微信支付</span>
+    </div>
+    
+    
+    <div id="alipay">
+      <img id="alipay_qr" src="/images/AliPay.png" alt="支付宝"/>
+      <span>支付宝</span>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/2019/04/25/fanyi/" rel="next" title="fanyi"><i class="fas fa-angle-left"></i><span class="nav-title">fanyi</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+      <a href="/2019/06/01/Java中的enum类的使用/" rel="prev" title="Java中的enum类的使用"><span class="nav-title">Java中的enum类的使用</span><i class="fas fa-angle-right"></i></a>
+      
+    </div>
+  </nav>
+  
+  
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTM1My8xNTg4MA==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
   
 </div>
 
@@ -196,6 +291,11 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+    
+    
+    
     
     
     <hr>

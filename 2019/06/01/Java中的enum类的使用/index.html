@@ -80,7 +80,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>分类: 测试 | Dowalker's blog</title>
+    <title>Java中的enum类的使用 | Dowalker's blog</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -122,22 +122,98 @@
         <div class="main-container">
           <div class="content">
             
-<div id="category" class="category page">
-  <h1 class="page-title">测试</h1>
+<div id="post" class="page">
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <header id="post-header" class="post-header">
-      <h1 class="post-title-simple" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/08/28/myblog/" itemprop="url">测试</a>
-      </h1>
-      
-      <span class="post-date">
-        <time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-28T14:29:00+08:00">08-28</time>
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://blog.dowalker.cn/2019/06/01/Java中的enum类的使用/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="Dowalker">
+       <meta itemprop="description" content="I do not know where to go,but I have been on the road.">
+       <meta itemprop="image" content="/images/avatar.png">
       </span>
-      
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="Dowalker's blog">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">Java中的enum类的使用</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-06-01T10:09:14+08:00">2019-06-01 10:09:14</time></span>
+        </span>
+        
+        
+        
+        
+        
+      </div>
     </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>创建枚举类型要使用 enum 关键字，隐含了所创建的类型都是 java.lang.Enum 类的子类（java.lang.Enum 是一个抽象类）。枚举类型符合通用模式 Class Enum&lt;E extends Enum<e>&gt;，而 E表示枚举类型的名称。枚举类型的每一个值都将映射到 protected Enum(String name, int ordinal) 构造函数中，在这里，每个值的名称都被转换成一个字符串，并且序数设置表示了此设置被创建的顺序。</e></p>
+<a id="more"></a>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs undefined">public class Task4 &#123;<br>    public static void main(String[] args) &#123;<br>        System.out.println(Season.SPRING.toString());<br>        // valueof()匹配枚举类中相同字符串的成员<br>        System.out.println(Season.valueOf(&quot;SUMMER&quot;));// ordinal 返回序号<br>        System.out.println(Season.AUTUMN.ordinal());<br>    &#125;<br>&#125;<br><br>enum Season &#123;<br>    SPRING(&quot;春天&quot;, &quot;春风又绿江南岸&quot;), SUMMER(&quot;夏天&quot;, &quot;映日荷花别样红&quot;), <br>    AUTUMN(&quot;秋天&quot;, &quot;秋水共长天一色&quot;), WINTER(&quot;冬天&quot;, &quot;窗含西岭千秋雪&quot;);<br><br>    private String seasonName;<br>    private String seasonDesc;<br><br>    private Season(String seasonName, String seasonDesc) &#123;<br>        this.seasonDesc = seasonDesc;<br>        this.seasonName = seasonName;<br>    &#125;<br><br>    public String toString() &#123;<br>        return seasonName + &quot;:&quot; + seasonDesc;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+    </main>
+    <footer class="post-footer">
+      
+    </footer>
   </article>
   
+  
+<div class="reward" id="reward">
+  <p>坚持原创技术分享，您的支持是我前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;" aria-hidden="true">
+    
+    <div id="wechat">
+      <img id="wechat_qr" src="/images/WeChatPay.png" alt="微信支付"/>
+      <span>微信支付</span>
+    </div>
+    
+    
+    <div id="alipay">
+      <img id="alipay_qr" src="/images/AliPay.png" alt="支付宝"/>
+      <span>支付宝</span>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/2019/05/31/SimpleDateFormat-格式化日期/" rel="next" title="SimpleDateFormat 格式化日期"><i class="fas fa-angle-left"></i><span class="nav-title">SimpleDateFormat 格式化日期</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+    </div>
+  </nav>
+  
+  
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTM1My8xNTg4MA==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
   
 </div>
 
@@ -196,6 +272,11 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+    
+    
+    
     
     
     <hr>
