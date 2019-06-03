@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.dowalker.cn/"/>
-  <updated>2019-06-01T03:23:37.486Z</updated>
+  <updated>2019-06-03T09:33:20.495Z</updated>
   <id>http://blog.dowalker.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OOP开闭原则</title>
+    <link href="http://blog.dowalker.cn/2019/06/03/OOP%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99/"/>
+    <id>http://blog.dowalker.cn/2019/06/03/OOP开闭原则/</id>
+    <published>2019-06-03T08:52:04.000Z</published>
+    <updated>2019-06-03T09:33:20.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;定义：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OCP：Open for extention, Closed for modification
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="http://blog.dowalker.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Java" scheme="http://blog.dowalker.cn/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Java中的enum类的使用</title>

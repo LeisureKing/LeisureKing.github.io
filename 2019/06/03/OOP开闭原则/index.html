@@ -80,7 +80,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>Hello World | 无人问津的小屋</title>
+    <title>OOP开闭原则 | 无人问津的小屋</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -126,7 +126,7 @@
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://blog.dowalker.cn/2018/08/25/hello-world/">
+      <link itemprop="mainEntityOfPage" href="http://blog.dowalker.cn/2019/06/03/OOP开闭原则/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="Dowalker">
        <meta itemprop="description" content="我从远方赶来，恰巧你们也在。">
@@ -137,13 +137,21 @@
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">Hello World</h1>
+      <h1 class="post-title" itemprop="name headline">OOP开闭原则</h1>
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-25T19:37:25+08:00">2018-08-25 19:37:25</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-06-03T16:52:04+08:00">2019-06-03 16:52:04</time></span>
         </span>
         
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+        </span>
         
         
         
@@ -151,18 +159,45 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br><a id="more"></a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+      <p><strong>定义：</strong></p>
+<p>OCP：Open for extention, Closed for modification Principle，即对扩展开放，对修改关闭原则</p>
+<p><strong>该原则的思想是：</strong></p>
+<p>可以通过扩展来满足变化，而不需要修改代码，或者说在设计一个模块的时候，应当使这个模块可以在不被<br>修改的前提下被扩展。</p>
+<p><strong>实现 ：</strong></p>
+<ul>
+<li><p>实现开闭原则的关键是抽象</p>
+</li>
+<li><p>定义一个抽象层，只规定功能而不提供实现，实现通过定义具体类来完成</p>
+</li>
+<li><p>当需求变化时，不是通过修改抽象层来完成，而是通过定义抽象层的新实现完成，即通过扩展来完成</p>
+</li>
+<li><p>通过抽象类及接口，规定了具体类的特征作为抽象层，相对稳定，不需修改，从而满足“对修改关闭”</p>
+</li>
+<li><p>从抽象类导出的具体类可以改变系统的行为，从而满足“对扩展开放”</p>
+</li>
+</ul>
+<p><strong>好处 ：</strong></p>
+<ul>
+<li><p>通过扩展已有软件系统，可提供新的行为，以满足对软件的新需求，提高了软件系统的适应性和灵活性</p>
+</li>
+<li><p>已有的软件模块，特别是最重要的抽象层模块不能再修改，提高了软件系统的一定的稳定性和延续性</p>
+</li>
+<li><p>这样的设计同时也满足了可复用性与可维护性;</p>
+</li>
+</ul>
+<p><strong>原设计</strong><br><figure class="hljs highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Salary</span> </span>&#123; <span class="hljs-comment">// 工资类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">computerSalary</span><span class="hljs-params">()</span> </span>&#123;<br>        System.out.println(<span class="hljs-string">"采用工资算法一计算工资"</span>);<br>    &#125;<br>&#125;<br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Accountant</span> </span>&#123; <span class="hljs-comment">// 会计类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ComputerSalary</span><span class="hljs-params">(Salary salary)</span> </span>&#123;<br>        salary.computerSalary();<br>    &#125;<br>&#125;<br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestOCP</span> </span>&#123; <span class="hljs-comment">// 测试类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        Accountant accountant = <span class="hljs-keyword">new</span> Accountant ();<br>        accountant.ComputerSalary(<span class="hljs-keyword">new</span> Salary());<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></p>
+<p>需求发生变化，按照工资算法二计算工资，如何实现呢?<br>通过修改Salary类的computerSalary() 来实现，不利于程序的稳定。</p>
+<p>所以可以使用开闭原则重新设计类。</p>
+<p><strong>修改后</strong><br><figure class="hljs highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Salary</span> </span>&#123; <span class="hljs-comment">// 工资接口</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">computerSalary</span><span class="hljs-params">()</span></span>;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BeijingSalary</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Salary</span> </span>&#123; <span class="hljs-comment">// 北京工资实现类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">computerSalary</span><span class="hljs-params">()</span> </span>&#123;<br>        System.out.println(<span class="hljs-string">"采用工资算法一计算工资"</span>);<br>    &#125;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HebeiSalary</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Salary</span> </span>&#123; <span class="hljs-comment">// 河北工资实现类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">computerSalary</span><span class="hljs-params">()</span> </span>&#123;<br>        System.out.println(<span class="hljs-string">"采用工资算法二计算工资"</span>);<br>    &#125;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Accountant</span> </span>&#123; <span class="hljs-comment">// 会计类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ComputerSalary</span><span class="hljs-params">(Salary salary)</span> </span>&#123;<br>        salary.computerSalary();<br>    &#125;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestOCP</span> </span>&#123; <span class="hljs-comment">// 测试类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        Accountant accountant = <span class="hljs-keyword">new</span> Accountant();<br>        accountant.ComputerSalary(<span class="hljs-keyword">new</span> BeijingSalary());<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></p>
 
     </main>
     <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/Java/" rel="tag"><i class="fas fa-tags"></i>Java</a>
+        
+      </div>
       
     </footer>
   </article>
@@ -194,10 +229,10 @@
   <nav class="page-nav">
     <div class="page-nav-next page-nav-item">
       
+      <a href="/2019/06/01/Java中的enum类的使用/" rel="next" title="Java中的enum类的使用"><i class="fas fa-angle-left"></i><span class="nav-title">Java中的enum类的使用</span></a>
+      
     </div>
     <div class="page-nav-prev page-nav-item">
-      
-      <a href="/2018/08/28/myblog/" rel="prev" title="测试"><span class="nav-title">测试</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </nav>
@@ -283,12 +318,6 @@
     
     
     
-    
-    <hr>
-    <div class="post-toc sidebar-item" id="toc-div">
-      <div><i class="fas fa-list-ol"></i>文章目录</div>
-      <div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-    </div>
     
     
     
