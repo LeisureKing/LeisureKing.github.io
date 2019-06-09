@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.dowalker.cn/"/>
-  <updated>2019-06-03T09:33:20.495Z</updated>
+  <updated>2019-06-07T02:18:11.686Z</updated>
   <id>http://blog.dowalker.cn/</id>
   
   <author>
@@ -17,22 +17,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>字符流与字节流</title>
+    <link href="http://blog.dowalker.cn/2019/06/04/%E5%AD%97%E7%AC%A6%E6%B5%81%E4%B8%8E%E5%AD%97%E8%8A%82%E6%B5%81/"/>
+    <id>http://blog.dowalker.cn/2019/06/04/字符流与字节流/</id>
+    <published>2019-06-04T06:31:28.000Z</published>
+    <updated>2019-06-07T02:18:11.686Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://image.iamber.top/FlX4mpYSHHKT1r6hDOggABeiaONO&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://image.iamber.top/Fmy5k8FewR844e1z_dmt6Yhtp_Ey&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>OOP开闭原则</title>
     <link href="http://blog.dowalker.cn/2019/06/03/OOP%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99/"/>
     <id>http://blog.dowalker.cn/2019/06/03/OOP开闭原则/</id>
     <published>2019-06-03T08:52:04.000Z</published>
-    <updated>2019-06-03T09:33:20.495Z</updated>
+    <updated>2019-06-07T02:11:03.438Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;定义：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;OCP：Open for extention, Closed for modification
-        
-      
+      &lt;p&gt;&lt;strong&gt;定义：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OCP：Open for extention, Closed for modification Principle，即对扩展开放，对修改关闭原则&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;该原则的思想是：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;可以通过扩展来满足变化，而不需要修改代码，或者说在设计一个模块的时候，应当使这个模块可以在不被&lt;br&gt;修改的前提下被扩展。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实现 ：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;实现开闭原则的关键是抽象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;定义一个抽象层，只规定功能而不提供实现，实现通过定义具体类来完成&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当需求变化时，不是通过修改抽象层来完成，而是通过定义抽象层的新实现完成，即通过扩展来完成&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;通过抽象类及接口，规定了具体类的特征作为抽象层，相对稳定，不需修改，从而满足“对修改关闭”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;从抽象类导出的具体类可以改变系统的行为，从而满足“对扩展开放”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     

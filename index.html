@@ -127,6 +127,44 @@
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://blog.dowalker.cn/2019/06/04/字符流与字节流/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="Dowalker">
+        <meta itemprop="description" content="我从远方赶来，恰巧你们也在。">
+        <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="无人问津的小屋">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link post-title-link-external" href="/2019/06/04/字符流与字节流/" itemprop="url">字符流与字节流</a>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-06-04T14:31:28+08:00">2019-06-04 14:31:28</time></span>
+        </span>
+        
+        
+        
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      
+      <p><img src="http://image.iamber.top/FlX4mpYSHHKT1r6hDOggABeiaONO" alt=""><br><img src="http://image.iamber.top/Fmy5k8FewR844e1z_dmt6Yhtp_Ey" alt=""><br>
+      
+    </main>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+  
+  <article class="article post card" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
       <link itemprop="mainEntityOfPage" href="http://blog.dowalker.cn/2019/06/03/OOP开闭原则/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
         <meta itemprop="name" content="Dowalker">
@@ -180,20 +218,6 @@
 <li><p>从抽象类导出的具体类可以改变系统的行为，从而满足“对扩展开放”</p>
 </li>
 </ul>
-<p><strong>好处 ：</strong></p>
-<ul>
-<li><p>通过扩展已有软件系统，可提供新的行为，以满足对软件的新需求，提高了软件系统的适应性和灵活性</p>
-</li>
-<li><p>已有的软件模块，特别是最重要的抽象层模块不能再修改，提高了软件系统的一定的稳定性和延续性</p>
-</li>
-<li><p>这样的设计同时也满足了可复用性与可维护性;</p>
-</li>
-</ul>
-<p><strong>原设计</strong><br><figure class="hljs highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Salary</span> </span>&#123; <span class="hljs-comment">// 工资类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">computerSalary</span><span class="hljs-params">()</span> </span>&#123;<br>        System.out.println(<span class="hljs-string">"采用工资算法一计算工资"</span>);<br>    &#125;<br>&#125;<br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Accountant</span> </span>&#123; <span class="hljs-comment">// 会计类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ComputerSalary</span><span class="hljs-params">(Salary salary)</span> </span>&#123;<br>        salary.computerSalary();<br>    &#125;<br>&#125;<br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestOCP</span> </span>&#123; <span class="hljs-comment">// 测试类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        Accountant accountant = <span class="hljs-keyword">new</span> Accountant ();<br>        accountant.ComputerSalary(<span class="hljs-keyword">new</span> Salary());<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></p>
-<p>需求发生变化，按照工资算法二计算工资，如何实现呢?<br>通过修改Salary类的computerSalary() 来实现，不利于程序的稳定。</p>
-<p>所以可以使用开闭原则重新设计类。</p>
-<p><strong>修改后</strong><br><figure class="hljs highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Salary</span> </span>&#123; <span class="hljs-comment">// 工资接口</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">computerSalary</span><span class="hljs-params">()</span></span>;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BeijingSalary</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Salary</span> </span>&#123; <span class="hljs-comment">// 北京工资实现类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">computerSalary</span><span class="hljs-params">()</span> </span>&#123;<br>        System.out.println(<span class="hljs-string">"采用工资算法一计算工资"</span>);<br>    &#125;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HebeiSalary</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Salary</span> </span>&#123; <span class="hljs-comment">// 河北工资实现类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">computerSalary</span><span class="hljs-params">()</span> </span>&#123;<br>        System.out.println(<span class="hljs-string">"采用工资算法二计算工资"</span>);<br>    &#125;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Accountant</span> </span>&#123; <span class="hljs-comment">// 会计类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ComputerSalary</span><span class="hljs-params">(Salary salary)</span> </span>&#123;<br>        salary.computerSalary();<br>    &#125;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestOCP</span> </span>&#123; <span class="hljs-comment">// 测试类</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        Accountant accountant = <span class="hljs-keyword">new</span> Accountant();<br>        accountant.ComputerSalary(<span class="hljs-keyword">new</span> BeijingSalary());<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></p>
-
       
     </main>
     <footer class="post-footer">
@@ -632,7 +656,7 @@
     
     <div class="archives-count">
       <div class="site-count-title">归档</div>
-      <div><a href="/archives/">8</a></div>
+      <div><a href="/archives/">9</a></div>
     </div>
     
     

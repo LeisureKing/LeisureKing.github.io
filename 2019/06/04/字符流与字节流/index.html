@@ -80,7 +80,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>归档 | 无人问津的小屋</title>
+    <title>字符流与字节流 | 无人问津的小屋</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -122,32 +122,102 @@
         <div class="main-container">
           <div class="content">
             
-<div id="archive" class="archive page">
-  <h1 class="page-title">归档</h1>
-  <h2 class="page-counter">
-    
-    你已经写了 9 篇文章！
-    
-  </h2>
-  
-  
-  
-  
-  <h2 class="page-title">2018</h1>
+<div id="post" class="page">
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <header id="post-header" class="post-header">
-      <h1 class="post-title-simple" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/12/26/利用阿里云服务器挖矿/" itemprop="url">利用阿里云服务器挖矿</a>
-      </h1>
-      
-      <span class="post-date">
-        <time title="post-date" itemprop="dateCreated datePublished" datetime="2018-12-26T21:22:58+08:00">12-26</time>
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://blog.dowalker.cn/2019/06/04/字符流与字节流/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="Dowalker">
+       <meta itemprop="description" content="我从远方赶来，恰巧你们也在。">
+       <meta itemprop="image" content="/images/avatar.png">
       </span>
-      
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="无人问津的小屋">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">字符流与字节流</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-06-04T14:31:28+08:00">2019-06-04 14:31:28</time></span>
+        </span>
+        
+        
+        
+        
+        
+      </div>
     </header>
+    <main class="post-main" itemprop="articleBody">
+      <p><img src="http://image.iamber.top/FlX4mpYSHHKT1r6hDOggABeiaONO" alt=""><br><img src="http://image.iamber.top/Fmy5k8FewR844e1z_dmt6Yhtp_Ey" alt=""><br><a id="more"></a></p>
+<p><strong>字节流与字符流的区别</strong></p>
+<p>字节流在操作的时候本身是不会用到缓冲区（内存）的,是与文件本身直接操作的,而字符流在操作的时<br>候是使用到缓冲区的。</p>
+<p><strong>字节流与字符流的选择</strong></p>
+<p>•所有的文件在硬盘或在传输的时候都是以字节的方式进行的,包括图片等都是按字节的方式存储的。</p>
+<p>•而字符是只有在内存中才会形成,所以在开发中,字节流使用较为广泛。</p>
+
+    </main>
+    <footer class="post-footer">
+      
+    </footer>
   </article>
   
+  
+<div class="reward" id="reward">
+  <p>坚持原创技术分享，您的支持是我前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;" aria-hidden="true">
+    
+    <div id="wechat">
+      <img id="wechat_qr" src="/images/WeChatPay.png" alt="微信支付"/>
+      <span>微信支付</span>
+    </div>
+    
+    
+    <div id="alipay">
+      <img id="alipay_qr" src="/images/AliPay.png" alt="支付宝"/>
+      <span>支付宝</span>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/2019/06/03/OOP开闭原则/" rel="next" title="OOP开闭原则"><i class="fas fa-angle-left"></i><span class="nav-title">OOP开闭原则</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+    </div>
+  </nav>
+  
+  
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTM1My8xNTg4MA==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
   
 </div>
 
@@ -206,6 +276,11 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+    
+    
+    
     
     
     <hr>
