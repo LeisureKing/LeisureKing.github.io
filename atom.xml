@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.dowalker.cn/"/>
-  <updated>2019-06-07T02:18:11.686Z</updated>
+  <updated>2019-06-16T03:47:04.162Z</updated>
   <id>http://blog.dowalker.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>对象的序列化与反序列化</title>
+    <link href="http://blog.dowalker.cn/2019/06/16/%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    <id>http://blog.dowalker.cn/2019/06/16/对象的序列化与反序列化/</id>
+    <published>2019-06-16T03:39:15.000Z</published>
+    <updated>2019-06-16T03:47:04.162Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;序列化与反序列化&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;序列化 (Serialization)是将对象的状态信息转换为可以存储或传输的形式的过程。一般将一个对象存储至一个储存媒介，例如档案或是记亿体缓冲等。在网络传输过程中，可以是字节或是XML等格式。而字节的或XML编码格式可以还原完全相等的对象。这个相反的过程又称为反序列化。&lt;/p&gt;
+&lt;p&gt;Java对象的序列化与反序列化&lt;br&gt;在Java中，我们可以通过多种方式来创建对象，并且只要对象没有被回收我们都可以复用该对象。但是，我们创建出来的这些Java对象都是存在于JVM的堆内存中的。只有JVM处于运行状态的时候，这些对象才可能存在。一旦JVM停止运行，这些对象的状态也就随之而丢失了。&lt;/p&gt;
+&lt;p&gt;但是在真实的应用场景中，我们需要将这些对象持久化下来，并且能够在需要的时候把对象重新读取出来。Java的对象序列化可以帮助我们实现该功能。&lt;/p&gt;
+&lt;p&gt;对象序列化机制（object serialization）是Java语言内建的一种对象持久化方式，通过对象序列化，可以把对象的状态保存为字节数组，并且可以在有需要的时候将这个字节数组通过反序列化的方式再转换成对象。对象序列化可以很容易的在JVM中的活动对象和字节数组（流）之间进行转换。&lt;/p&gt;
+&lt;p&gt;在Java中，对象的序列化与反序列化被广泛应用到RMI(远程方法调用)及网络传输中。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>字符流与字节流</title>
